@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Über mich</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html">Startseite</a>
+        <a href="ueber.html">Über mich</a>
+        <a href="hobby.html">Mein Hobby</a>
+        <a href="quellen.html">Quellen</a>
+    </nav>
+    <h1>Über mich</h1>
+    <p>Hier steht etwas über mich.</p>
+    <button id="helloBtn">Sag Hallo</button>
+    <p id="info">Noch kein Text.</p>
+    <button id="setText">Button2</button>
+    <button id="askName">Wie heißt du?</button>
+        <p id ="greet">hier wird dein name stehen</p>
+     
+    <img id="swapImage" src="htmlbild1.jpg" width="400" alt="Katze">
+    <button id="swapBtn">Bild wechseln</button>
+    <script>
+      document.getElementById('swapBtn').addEventListener('click', function() {
+        var img = document.getElementById('swapImage');
+        if (img.src.includes('htmlbild1.jpg')) {
+          img.src = 'htmlbild2.jpg';
+        } else {
+          img.src = 'htmlbild1.jpg';
+        }
+      });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
